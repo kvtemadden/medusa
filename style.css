@@ -241,3 +241,9 @@ p {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+
+@media (max-width: 435px) {
+#hero  {
+    height: 75vh;
+    }
+}
