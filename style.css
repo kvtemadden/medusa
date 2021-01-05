@@ -130,24 +130,36 @@ header {
 }
 
 h1 {
+    margin-bottom: 1rem;
     font-family: 'Crimson Pro', Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.3rem;
+    font-size: 2.75rem;
     line-height: 1.1;
     font-weight: 600;
     letter-spacing: -0.02rem;
 }
 
 h2 {
+    margin-bottom: 1rem;
     font-family: 'Crimson Pro', Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     line-height: 1.1;
     font-weight: 600;
     letter-spacing: -0.02rem;
 }
 
+h3 {
+    font-family: 'Crimson Pro', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.9rem;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -0.02rem;
+    margin-bottom: 1rem;
+}
+
 p {
     letter-spacing: 0.01rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .highlight {
@@ -256,12 +268,6 @@ p {
     }
 }
 
-/* @media (max-width: 339px) {
-    #hero  {
-        height: 55vh;
-        }
-    } */
-
 section {
     margin-bottom: 8rem;
 }
@@ -275,3 +281,49 @@ section {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.feature {
+    height: 200px;
+    width: 100%;
+    background-color: #082432;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding-left: 2rem;
+}
+
+.img-left {
+    float: left;
+    width: 45%;
+}
+
+.p-right {
+    float: right;
+    width: 50%;
+}
+
+.img-right {
+    float: right;
+    width: 50%;
+}
+
+.p-left {
+    float: left;
+    width: 45%
+}
+
+.ptn-container {
+    width: 100%;
+    clear: both;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: inline-block;
+}
+
+@media (max-width: 495px) {
+    .img-right, .img-left, .p-left, .p-right{
+        float: none;
+        margin: 0;
+        width: 100%;
+        padding-top: 1rem;
+    }
+    }
