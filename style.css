@@ -137,6 +137,14 @@ h1 {
     letter-spacing: -0.02rem;
 }
 
+h2 {
+    font-family: 'Crimson Pro', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -0.02rem;
+}
+
 p {
     letter-spacing: 0.01rem;
     font-size: 0.8rem;
@@ -225,7 +233,7 @@ p {
     height: 10vw;
     width: 100%;
     position: absolute;
-    bottom: -10vw;
+    bottom: -9.9vw;
 }
 
   .slant-ltr-dbl::after {
@@ -237,7 +245,7 @@ p {
     height: 10vw;
     width: 100%;
     position: absolute;
-    bottom: -10vw;
+    bottom: -9.9vw;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
@@ -246,4 +254,24 @@ p {
 #hero  {
     height: 75vh;
     }
+}
+
+/* @media (max-width: 339px) {
+    #hero  {
+        height: 55vh;
+        }
+    } */
+
+section {
+    margin-bottom: 8rem;
+}
+
+.right-section {
+    text-align: right;
+}
+
+.gutter {
+    max-width: 1024px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
