@@ -299,8 +299,19 @@ section {
 
 .gutter {
     max-width: 1024px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 1044px) {
+ .gutter {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+} 
 }
 
 .feature {
@@ -348,3 +359,61 @@ section {
         padding-top: 1rem;
     }
     }
+
+.services {
+    background: #082432;
+    color: #fff;
+    margin-bottom: 0;
+    grid-template-columns: repeat(4, auto);
+    height: 0px;
+    width: 0px;
+}
+
+.services-col {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    max-width: 240px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: none;
+}
+
+.navBar-services:hover .services-col {
+    height: auto;
+    width: auto;
+}
+
+.navBar-services {
+    color: #fff;
+}
+
+.services {
+    box-sizing: border-box;
+    min-width: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-around;
+    visibility: visible;
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 1;
+    color: white;
+    z-index: 3;
+    margin: 0px;
+    gap: 60px;
+    transition: all 200ms ease 0s;
+}
+
+.sml-icon {
+    height: 40px;
+}
+
+.services-col h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.services-col p {
+    font-size: .9rem;
+}
